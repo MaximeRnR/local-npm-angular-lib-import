@@ -1,8 +1,8 @@
-## Pourquoi ?
+# Pourquoi ?
 
-Le but est d'utiliser une lib perso sans avoir à la publish et quel soit sur le même fileSystem que les applications qui vont l'importer. 
+Le but est d'utiliser une lib perso sans avoir à la publish et quelle soit sur le même fileSystem que les applications qui vont l'importer. 
 
-## Quoi faire ?
+# Quoi faire ?
 
 
 ``` 
@@ -17,3 +17,10 @@ cd /local-npm-lib-import-angular/sample-app-using-lib
 npm install --save && ng serve
 ```
 
+# Que se passe t il ? 
+
+### On installe les dépendance nécessaire au build de la lib.
+### On build la lib.
+### On pack le résultat ce qui donne un tgz de la lib.
+### On link ce tgz dans le package.json de l'application qui l'utilise.
+### On build et lance l'application.
